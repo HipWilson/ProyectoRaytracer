@@ -2,7 +2,6 @@ use crate::noise::{fbm2, value_noise2};
 use crate::vec3::{Color, Vec3};
 
 // Cara de un cubo que fue golpeada por el rayo. Nos sirve para mapear texturas
-// distintas en la cara de arriba vs los lados (como en Minecraft: pasto arriba, tierra al lado).
 #[derive(Clone, Copy, PartialEq, Debug)]
 pub enum Face {
     Top,
@@ -13,8 +12,7 @@ pub enum Face {
     West,
 }
 
-// Devuelve los dos ejes "tangentes" (u, v) de una cara, en coordenadas del mundo.
-// Se usan para poder convertir la perturbacion 2D del mapa de normales en un vector 3D.
+// Devuelve los dos ejes de una cara, en coordenadas del mundo.
 pub fn face_tangents(face: Face) -> (Vec3, Vec3) {
     match face {
         Face::Top | Face::Bottom => (Vec3::new(1.0, 0.0, 0.0), Vec3::new(0.0, 0.0, 1.0)),
@@ -23,8 +21,7 @@ pub fn face_tangents(face: Face) -> (Vec3, Vec3) {
     }
 }
 
-// Los distintos "bloques" del diorama. Cada uno tiene su propia textura procedural
-// (no cargamos imagenes desde disco para no depender de librerias externas de imagenes).
+// Los distintos "bloques" del diorama, Cada uno tiene su propia textura procedural
 #[derive(Clone, Copy)]
 pub enum TextureKind {
     Grass,
@@ -36,7 +33,7 @@ pub enum TextureKind {
     Leaves,
 }
 
-// Parametros fisicos del material (lo que pide el enunciado: albedo/especular/transparencia/reflectividad).
+// Parametros fisicos del material
 #[derive(Clone, Copy)]
 pub struct MaterialParams {
     pub specular: f32,
@@ -95,7 +92,7 @@ impl TextureKind {
                 transparency: 0.0,
                 reflectivity: 0.05,
                 refractive_index: 1.0,
-                emissive: Some(Vec3::new(1.0, 0.45, 0.05)), // material emisivo: la lava brilla por si sola
+                emissive: Some(Vec3::new(1.0, 0.45, 0.05)), // material emisivo
                 has_normal_map: false,
             },
             TextureKind::Leaves => MaterialParams {
@@ -109,8 +106,7 @@ impl TextureKind {
         }
     }
 
-    // Color base de la textura en el punto (u, v) de la cara indicada.
-    // u, v estan en el rango 0..1 dentro de esa cara.
+    // Color base de la textura en el punto
     pub fn color_at(&self, u: f32, v: f32, face: Face) -> Color {
         match self {
             TextureKind::Grass => {
@@ -121,7 +117,7 @@ impl TextureKind {
                     Face::Top => Vec3::lerp(grass_top, grass_top * 1.2, n),
                     Face::Bottom => dirt * (0.75 + n * 0.4),
                     _ => {
-                        // lados: tierra, con una franja de pasto colgando del borde de arriba
+                        // lados
                         let base = dirt * (0.8 + n * 0.35);
                         if v > 0.85 {
                             Vec3::lerp(base, grass_top, (v - 0.85) / 0.15)
@@ -169,8 +165,8 @@ impl TextureKind {
                 Vec3::lerp(Vec3::new(0.75, 0.12, 0.0), Vec3::new(1.0, 0.8, 0.15), n)
             }
             TextureKind::Leaves => {
-                // Follaje moteado en todas las caras (no distingue arriba/lados como el pasto),
-                // para que se vea bien como una copa de arbol sin bordes raros.
+                // Follaje moteado en todas las caras
+               
                 let base = Vec3::new(0.28, 0.5, 0.16);
                 let n = fbm2(u * 14.0 + 5.0, v * 14.0 + 5.0, 88, 3);
                 let clump = value_noise2(u * 5.0, v * 5.0, 12);
@@ -180,8 +176,7 @@ impl TextureKind {
         }
     }
 
-    // Perturbacion del mapa de normales (solo la piedra la usa). Devuelve un desplazamiento
-    // (du, dv, 0) que luego se suma a la normal geometrica en espacio de la cara.
+    // Perturbacion del mapa de normales 
     pub fn normal_perturb(&self, u: f32, v: f32) -> Vec3 {
         match self {
             TextureKind::Stone => {
@@ -196,8 +191,7 @@ impl TextureKind {
     }
 }
 
-// Dibuja lineas finas de "mortero" para que se note la division entre bloques
-// dentro de una misma cara grande (util para que la piedra/el vidrio se vean como varios bloques).
+// Dibuja lineas finas de mortero para que se note la division entre bloques
 fn block_grid_shade(u: f32, v: f32, subdivisions: f32) -> Color {
     let fu = (u * subdivisions).fract();
     let fv = (v * subdivisions).fract();

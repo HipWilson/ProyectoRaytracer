@@ -6,9 +6,7 @@ use crate::vec3::Vec3;
 pub struct Material {
     pub texture: TextureKind,
     pub params: MaterialParams,
-    // Multiplicador de color (1,1,1 = sin cambio). Permite reusar la misma textura
-    // procedural con variaciones de color distintas (por ejemplo, hojas mas amarillas
-    // o mas anaranjadas en distintos arboles) sin tener que escribir una textura nueva.
+    // Multiplicador de color 
     pub tint: Color,
 }
 
