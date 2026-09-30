@@ -33,6 +33,7 @@ pub enum TextureKind {
     Glass,
     Water,
     Lava,
+    Leaves,
 }
 
 // Parametros fisicos del material (lo que pide el enunciado: albedo/especular/transparencia/reflectividad).
@@ -97,6 +98,14 @@ impl TextureKind {
                 emissive: Some(Vec3::new(1.0, 0.45, 0.05)), // material emisivo: la lava brilla por si sola
                 has_normal_map: false,
             },
+            TextureKind::Leaves => MaterialParams {
+                specular: 0.05,
+                transparency: 0.0,
+                reflectivity: 0.0,
+                refractive_index: 1.0,
+                emissive: None,
+                has_normal_map: false,
+            },
         }
     }
 
@@ -158,6 +167,15 @@ impl TextureKind {
             TextureKind::Lava => {
                 let n = fbm2(u * 6.0, v * 6.0, 55, 3);
                 Vec3::lerp(Vec3::new(0.75, 0.12, 0.0), Vec3::new(1.0, 0.8, 0.15), n)
+            }
+            TextureKind::Leaves => {
+                // Follaje moteado en todas las caras (no distingue arriba/lados como el pasto),
+                // para que se vea bien como una copa de arbol sin bordes raros.
+                let base = Vec3::new(0.28, 0.5, 0.16);
+                let n = fbm2(u * 14.0 + 5.0, v * 14.0 + 5.0, 88, 3);
+                let clump = value_noise2(u * 5.0, v * 5.0, 12);
+                let shaded = Vec3::lerp(base * 0.75, base * 1.25, n);
+                Vec3::lerp(shaded, shaded * 0.7, (clump < 0.25) as i32 as f32)
             }
         }
     }
