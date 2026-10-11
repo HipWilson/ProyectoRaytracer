@@ -3,16 +3,22 @@ use crate::ray::Ray;
 use crate::texture::Face;
 use crate::vec3::Vec3;
 
+#[derive(Clone, Copy)]
 pub struct Cube {
     pub min: Vec3,
     pub max: Vec3,
     pub material: Material,
 }
 
+// Resultado de una interseccion rayo-cubo.
+// IMPORTANTE: (u, v) estan en coordenadas del MUNDO (unidades de bloque), no normalizadas por cubo.
+// Asi una pared de 6x3 bloques muestra 6x3 texturas repetidas en vez de una sola textura estirada,
+// y todos los bloques del mismo material "encajan" entre si (como en Minecraft).
+#[derive(Clone, Copy)]
 pub struct Hit {
     pub t: f32,
     pub point: Vec3,
-    pub normal: Vec3,
+    pub normal: Vec3, // siempre apunta hacia AFUERA del cubo
     pub face: Face,
     pub u: f32,
     pub v: f32,
@@ -24,23 +30,25 @@ impl Cube {
         Cube { min, max, material }
     }
 
-    // Metodo de "slabs": la tecnica clasica para intersectar un rayo con una caja alineada a los ejes.
-    // Ademas de t, calculamos cual de las 3 dimensiones (x/y/z) fue la que determino la entrada,
-    // para saber en que cara del cubo golpeamos y poder mapear la textura ahi.
+    // Metodo de "slabs" (interseccion rayo-caja alineada a los ejes).
+    // Calcula la entrada (t_enter) y la salida (t_exit). Si el rayo ya esta DENTRO del cubo
+    // (caso del rayo refractado dentro del vidrio) devolvemos la cara de salida con su normal
+    // hacia afuera; asi la refraccion puede salir correctamente del bloque.
     pub fn hit(&self, ray: &Ray, t_min: f32, t_max: f32) -> Option<Hit> {
         let orig = [ray.origin.x, ray.origin.y, ray.origin.z];
         let dir = [ray.dir.x, ray.dir.y, ray.dir.z];
         let bmin = [self.min.x, self.min.y, self.min.z];
         let bmax = [self.max.x, self.max.y, self.max.z];
 
-        let mut tmin = t_min;
-        let mut tmax = t_max;
-        let mut hit_axis: usize = 0;
-        let mut hit_sign: f32 = 1.0;
+        let mut t_enter = f32::NEG_INFINITY;
+        let mut t_exit = f32::INFINITY;
+        let mut enter_axis = 0usize;
+        let mut enter_sign = 1.0f32;
+        let mut exit_axis = 0usize;
+        let mut exit_sign = 1.0f32;
 
         for axis in 0..3 {
             if dir[axis].abs() < 1e-8 {
-                // Rayo paralelo a este eje: si el origen esta fuera del rango de la caja, no hay interseccion.
                 if orig[axis] < bmin[axis] || orig[axis] > bmax[axis] {
                     return None;
                 }
@@ -49,56 +57,60 @@ impl Cube {
             let inv_d = 1.0 / dir[axis];
             let mut t0 = (bmin[axis] - orig[axis]) * inv_d;
             let mut t1 = (bmax[axis] - orig[axis]) * inv_d;
-            let mut sign = -1.0;
-            if t0 > t1 {
+            // Si dir > 0 entramos por la cara minima (normal -1); si dir < 0, por la maxima (normal +1).
+            let mut sign_in = -1.0;
+            if inv_d < 0.0 {
                 std::mem::swap(&mut t0, &mut t1);
-                sign = 1.0;
+                sign_in = 1.0;
             }
-            if t0 > tmin {
-                tmin = t0;
-                hit_axis = axis;
-                hit_sign = sign;
+            if t0 > t_enter {
+                t_enter = t0;
+                enter_axis = axis;
+                enter_sign = sign_in;
             }
-            if t1 < tmax {
-                tmax = t1;
+            if t1 < t_exit {
+                t_exit = t1;
+                exit_axis = axis;
+                exit_sign = -sign_in;
             }
-            if tmax <= tmin {
+            if t_exit < t_enter {
                 return None;
             }
         }
 
-        if tmin < t_min || tmin > t_max {
+        let (t, axis, sign) = if t_enter >= t_min {
+            (t_enter, enter_axis, enter_sign)
+        } else if t_exit >= t_min {
+            (t_exit, exit_axis, exit_sign)
+        } else {
+            return None;
+        };
+        if t > t_max {
             return None;
         }
 
-        let point = ray.at(tmin);
-        let size = self.max - self.min;
-        let normal;
-        let face;
-        let u;
-        let v;
+        let point = ray.at(t);
+        let (normal, face, u, v) = match axis {
+            0 => (
+                Vec3::new(sign, 0.0, 0.0),
+                if sign > 0.0 { Face::East } else { Face::West },
+                point.z,
+                point.y,
+            ),
+            1 => (
+                Vec3::new(0.0, sign, 0.0),
+                if sign > 0.0 { Face::Top } else { Face::Bottom },
+                point.x,
+                point.z,
+            ),
+            _ => (
+                Vec3::new(0.0, 0.0, sign),
+                if sign > 0.0 { Face::South } else { Face::North },
+                point.x,
+                point.y,
+            ),
+        };
 
-        match hit_axis {
-            0 => {
-                normal = Vec3::new(hit_sign, 0.0, 0.0);
-                face = if hit_sign > 0.0 { Face::East } else { Face::West };
-                u = ((point.z - self.min.z) / size.z).clamp(0.0, 1.0);
-                v = ((point.y - self.min.y) / size.y).clamp(0.0, 1.0);
-            }
-            1 => {
-                normal = Vec3::new(0.0, hit_sign, 0.0);
-                face = if hit_sign > 0.0 { Face::Top } else { Face::Bottom };
-                u = ((point.x - self.min.x) / size.x).clamp(0.0, 1.0);
-                v = ((point.z - self.min.z) / size.z).clamp(0.0, 1.0);
-            }
-            _ => {
-                normal = Vec3::new(0.0, 0.0, hit_sign);
-                face = if hit_sign > 0.0 { Face::South } else { Face::North };
-                u = ((point.x - self.min.x) / size.x).clamp(0.0, 1.0);
-                v = ((point.y - self.min.y) / size.y).clamp(0.0, 1.0);
-            }
-        }
-
-        Some(Hit { t: tmin, point, normal, face, u, v, material: self.material })
+        Some(Hit { t, point, normal, face, u, v, material: self.material })
     }
 }

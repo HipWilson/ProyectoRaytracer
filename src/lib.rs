@@ -1,3 +1,4 @@
+pub mod bvh;
 pub mod camera;
 pub mod cube;
 pub mod material;
@@ -5,5 +6,6 @@ pub mod noise;
 pub mod ray;
 pub mod render;
 pub mod scene;
+pub mod sky;
 pub mod texture;
 pub mod vec3;
