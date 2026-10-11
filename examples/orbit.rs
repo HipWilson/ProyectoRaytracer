@@ -1,11 +1,4 @@
-// Genera los cuadros de un video del diorama SIN abrir ventana (todo en CPU, sin librerias):
-// la camara da una vuelta completa, hace zoom (acerca y aleja) y la hora pasa de dia a noche.
-//
-//   cargo run --release --example orbit              (120 cuadros, 960x640, 8 rayos/pixel)
-//   cargo run --release --example orbit -- 240 1280 720 8
-//
-// Los cuadros quedan en la carpeta frames/ como .bmp. Para convertirlos en video (con ffmpeg):
-//   ffmpeg -framerate 24 -i frames/frame_%04d.bmp -c:v libx264 -pix_fmt yuv420p diorama.mp4
+// Genera los cuadros de un video del diorama SIN abrir ventana 
 use diorama_raytracer::camera::Camera;
 use diorama_raytracer::render::render;
 use diorama_raytracer::scene::build_diorama;

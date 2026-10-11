@@ -11,9 +11,6 @@ pub struct Cube {
 }
 
 // Resultado de una interseccion rayo-cubo.
-// IMPORTANTE: (u, v) estan en coordenadas del MUNDO (unidades de bloque), no normalizadas por cubo.
-// Asi una pared de 6x3 bloques muestra 6x3 texturas repetidas en vez de una sola textura estirada,
-// y todos los bloques del mismo material "encajan" entre si (como en Minecraft).
 #[derive(Clone, Copy)]
 pub struct Hit {
     pub t: f32,

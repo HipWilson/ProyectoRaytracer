@@ -1,10 +1,5 @@
-// Skybox + ambiente (hora del dia).
-//
-// El skybox es un CUBEMAP real: 6 caras (+X, -X, +Y, -Y, +Z, -Z) de NxN texeles que se generan
-// una sola vez al iniciar (procedural, sin cargar imagenes). Hay un cubemap de dia (degradado + nubes)
-// y uno de noche (estrellas + banda de via lactea). Para cada rayo que escapa de la escena se
-// busca en que cara del cubo pega y se muestrea esa textura (interpolacion bilineal).
-// El sol y la luna se dibujan encima, y todo cambia con la hora del dia.
+// Skybox + ambiente 
+
 use crate::noise::{fbm2, fbm3, hash3};
 use crate::vec3::{Color, Vec3};
 use std::f32::consts::PI;

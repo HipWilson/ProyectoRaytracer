@@ -1,7 +1,7 @@
-// Ruido "value noise" hecho a mano (sin librerias externas), usado para:
-//  - generar el terreno procedural (altura de cada columna)
-//  - texturas por texel estilo Minecraft (pixeles grandes con variacion)
-//  - el cielo (nubes, estrellas) y el mapa de normales
+// usado para:
+//  - generar el terreno procedural
+//  - texturas por texel estilo Minecraft 
+//  - el cielo y el mapa de normales
 
 // Hash entero determinista: mismo (x, y, seed) siempre da el mismo resultado.
 pub fn hash2(x: i32, y: i32, seed: u32) -> f32 {

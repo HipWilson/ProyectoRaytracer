@@ -9,14 +9,6 @@ use crate::vec3::{Color, Vec3};
 
 // ------------------------------------------------------------------------------------------------
 // Terreno procedural en forma de rejilla.
-//
-// Optimizacion: en vez de guardar un Cube por cada bloque (16x16x6 = ~1500 cajas) y probar el rayo
-// contra todas, guardamos solo la ALTURA de cada columna y recorremos la rejilla en 2D con un
-// algoritmo DDA (Amanatides-Woo), que visita unicamente las celdas que el rayo realmente cruza.
-//
-// Cada columna es una pila de "bloques" virtuales: el material de cada capa se decide al golpear
-// (pasto/arena arriba, tierra debajo, piedra mas abajo), igual que en Minecraft.
-// El agua NO es un cubo por columna sino un plano a `water_level` (una sola interseccion rayo-plano).
 // ------------------------------------------------------------------------------------------------
 pub struct TerrainGrid {
     pub size: usize,

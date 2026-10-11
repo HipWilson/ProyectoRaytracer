@@ -267,3 +267,37 @@ pub fn upscale_nearest(src: &[u8], sw: usize, sh: usize, dw: usize, dh: usize) -
     }
     out
 }
+
+// Agranda una imagen RGBA8 con interpolacion BILINEAL (suaviza en vez de mostrar pixeles cuadrados).
+// Se hace en la CPU, asi la imagen final ya sale al tamano de la ventana y raylib solo la dibuja 1:1.
+pub fn upscale_bilinear(src: &[u8], sw: usize, sh: usize, dw: usize, dh: usize) -> Vec<u8> {
+    let mut out = vec![0u8; dw * dh * 4];
+    // Precalculamos, para cada columna destino, los dos pixeles origen y el peso (se reutiliza en todas las filas)
+    let mut xs: Vec<(usize, usize, u32)> = Vec::with_capacity(dw);
+    for x in 0..dw {
+        let fx = ((x as f32 + 0.5) * sw as f32 / dw as f32 - 0.5).clamp(0.0, (sw - 1) as f32);
+        let x0 = fx.floor() as usize;
+        let x1 = (x0 + 1).min(sw - 1);
+        xs.push((x0, x1, ((fx - x0 as f32) * 256.0) as u32));
+    }
+    for y in 0..dh {
+        let fy = ((y as f32 + 0.5) * sh as f32 / dh as f32 - 0.5).clamp(0.0, (sh - 1) as f32);
+        let y0 = fy.floor() as usize;
+        let y1 = (y0 + 1).min(sh - 1);
+        let wy = ((fy - y0 as f32) * 256.0) as u32;
+        for (x, &(x0, x1, wx)) in xs.iter().enumerate() {
+            let i00 = (y0 * sw + x0) * 4;
+            let i10 = (y0 * sw + x1) * 4;
+            let i01 = (y1 * sw + x0) * 4;
+            let i11 = (y1 * sw + x1) * 4;
+            let o = (y * dw + x) * 4;
+            for c in 0..3 {
+                let top = src[i00 + c] as u32 * (256 - wx) + src[i10 + c] as u32 * wx;
+                let bot = src[i01 + c] as u32 * (256 - wx) + src[i11 + c] as u32 * wx;
+                out[o + c] = ((top * (256 - wy) + bot * wy) >> 16) as u8;
+            }
+            out[o + 3] = 255;
+        }
+    }
+    out
+}

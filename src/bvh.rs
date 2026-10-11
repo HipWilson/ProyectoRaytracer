@@ -1,5 +1,4 @@
-// BVH (Bounding Volume Hierarchy): arbol de cajas envolventes.
-// En vez de probar el rayo contra TODOS los cubos de la escena (casa, arboles, antorchas...),
+// En vez de probar el rayo contra TODOS los cubos de la escena
 // el arbol descarta de golpe grupos enteros de cubos cuando el rayo ni siquiera toca su caja.
 // Pasa de O(n) cubos por rayo a aproximadamente O(log n).
 use crate::cube::{Cube, Hit};

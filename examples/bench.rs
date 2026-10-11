@@ -1,5 +1,4 @@
-// Mide cuanto tarda el render a distintas resoluciones y rayos por pixel en SU maquina:
-//   cargo run --release --example bench
+// Mide cuanto tarda el render a distintas resoluciones y rayos por pixel en SU maquina
 use diorama_raytracer::camera::Camera;
 use diorama_raytracer::render::render;
 use diorama_raytracer::scene::build_diorama;
