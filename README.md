@@ -5,7 +5,7 @@ Todo el trazado de rayos se calcula en la CPU, sin librerías de raytracing ni c
 La única dependencia es `raylib`, usada solo para abrir la ventana y mostrar la imagen ya calculada.
 
 ## Video
-[![Diorama](docs/diorama.gif)]
+![Diorama](docs/diorama.gif)
 ## Cómo correrlo
 
 ```bash
