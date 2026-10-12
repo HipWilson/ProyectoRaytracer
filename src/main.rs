@@ -1,5 +1,5 @@
 use diorama_raytracer::camera::Camera;
-use diorama_raytracer::render::{render, upscale_bilinear};
+use diorama_raytracer::render::{render_q, upscale_bilinear, Quality};
 use diorama_raytracer::scene::build_diorama;
 use diorama_raytracer::sky::Environment;
 use diorama_raytracer::vec3::Vec3;
@@ -16,9 +16,15 @@ const RENDER_H: usize = 320;
 const WINDOW_W: usize = 960;
 const WINDOW_H: usize = 640;
 
-// Refinamiento progresivo cuando la camara se queda quieta: primero una imagen rapida (1 rayo
-// por pixel) y despues se va mejorando (4 y luego 9 rayos por pixel = anti-aliasing mas fino).
-const REFINE_STAGES: [u32; 3] = [1, 4, 9];
+// Refinamiento progresivo cuando la camara se queda quieta, etapa por etapa: (ancho, alto, rayos por pixel).
+//  1) imagen rapida, 2) con anti-aliasing, 3) etapa FINAL a la resolucion completa de la ventana
+//  (sin agrandar nada: cada pixel de la pantalla se calcula con raytracing, 4 rayos por pixel).
+// Si su computadora es lenta y la etapa 3 tarda demasiado, borren esa linea.
+const REFINE_STAGES: [(usize, usize, u32); 3] = [
+    (RENDER_W, RENDER_H, 1),
+    (RENDER_W, RENDER_H, 4),
+    (WINDOW_W, WINDOW_H, 4),
+];
 
 fn main() {
     let scene = build_diorama();
@@ -133,7 +139,7 @@ fn main() {
             let env = Environment::new(time_of_day, anim_time);
             let t0 = Instant::now();
             let (pw, ph) = (RENDER_W / preview_div, RENDER_H / preview_div);
-            let small = render(&scene, &cam, &env, pw, ph, 1);
+            let small = render_q(&scene, &cam, &env, pw, ph, 1, &Quality::PREVIEW);
             let pixels = upscale_bilinear(&small, pw, ph, WINDOW_W, WINDOW_H);
             last_ms = t0.elapsed().as_secs_f32() * 1000.0;
             last_label = format!("preview {}x{}", pw, ph);
@@ -141,20 +147,25 @@ fn main() {
             stage = 0;
 
             // Ajuste automatico: si tarda mucho, bajamos la resolucion del preview; si sobra, la subimos.
-            if last_ms > 45.0 && preview_div < 4 {
+            if last_ms > 40.0 && preview_div < 3 {
                 preview_div += 1;
-            } else if last_ms < 14.0 && preview_div > 1 {
+            } else if last_ms < 18.0 && preview_div > 1 {
                 preview_div -= 1;
             }
         } else if stage < REFINE_STAGES.len() {
             // Todo quieto: refinamos la imagen etapa por etapa (cada una con mas rayos por pixel).
-            let spp = REFINE_STAGES[stage];
+            let (rw, rh, spp) = REFINE_STAGES[stage];
             let env = Environment::new(time_of_day, anim_time);
             let t0 = Instant::now();
-            let small = render(&scene, &cam, &env, RENDER_W, RENDER_H, spp);
-            let pixels = upscale_bilinear(&small, RENDER_W, RENDER_H, WINDOW_W, WINDOW_H);
+            let img = render_q(&scene, &cam, &env, rw, rh, spp, &Quality::FULL);
+            // si la etapa ya es del tamano de la ventana no hay que agrandar nada
+            let pixels = if rw == WINDOW_W && rh == WINDOW_H {
+                img
+            } else {
+                upscale_bilinear(&img, rw, rh, WINDOW_W, WINDOW_H)
+            };
             last_ms = t0.elapsed().as_secs_f32() * 1000.0;
-            last_label = format!("{}x{} con {} rayos/pixel", RENDER_W, RENDER_H, spp);
+            last_label = format!("{}x{} con {} rayos/pixel", rw, rh, spp);
             texture.update_texture(&pixels).expect("no se pudo actualizar la textura");
             stage += 1;
         }

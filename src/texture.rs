@@ -75,9 +75,13 @@ fn frac(x: f32) -> f32 {
     x - x.floor()
 }
 // Ruido constante dentro de cada "texel" (pixel grande) de la textura. `res` = texeles por bloque.
+// `d` es el nivel de detalle (LOD): 1 = textura completa (cerca), 0 = promedio liso (muy lejos).
+// Cuando un texel es mas chico que un pixel de la pantalla, el ruido solo produce parpadeo/pixeleado;
+// por eso se mezcla hacia el valor medio segun la distancia (como el mipmapping de una GPU, pero en CPU).
 #[inline]
-fn texel(u: f32, v: f32, res: f32, seed: u32) -> f32 {
-    hash2((u * res).floor() as i32, (v * res).floor() as i32, seed)
+fn texel(d: f32, u: f32, v: f32, res: f32, seed: u32) -> f32 {
+    let n = hash2((u * res).floor() as i32, (v * res).floor() as i32, seed);
+    0.5 + (n - 0.5) * d
 }
 #[inline]
 fn smooth01(e0: f32, e1: f32, x: f32) -> f32 {
@@ -91,10 +95,10 @@ fn block_edge(u: f32, v: f32) -> f32 {
     if e < 0.035 { 0.86 } else { 1.0 }
 }
 
-fn dirt_color(u: f32, v: f32) -> Color {
-    let n = texel(u, v, 8.0, 17);
+fn dirt_color(d: f32, u: f32, v: f32) -> Color {
+    let n = texel(d, u, v, 8.0, 17);
     let mut c = Vec3::new(0.44, 0.30, 0.18) * (0.72 + 0.45 * n);
-    if texel(u, v, 8.0, 18) > 0.92 {
+    if texel(d, u, v, 8.0, 18) > 0.92 {
         c = Vec3::new(0.40, 0.38, 0.36); // piedritas
     }
     c
@@ -189,50 +193,52 @@ impl TextureKind {
     }
 
     // Color base de la textura en el punto. (u, v) estan en unidades de bloque del mundo.
-    // `time` solo lo usan los materiales animados (lava).
-    pub fn color_at(&self, u: f32, v: f32, face: Face, time: f32) -> Color {
+    // `time` solo lo usan los materiales animados (lava). `detail` (0..1) controla cuanto ruido fino se muestra (LOD).
+    pub fn color_at(&self, u: f32, v: f32, face: Face, time: f32, detail: f32) -> Color {
+        let d = detail.clamp(0.0, 1.0);
         match self {
             TextureKind::Grass => match face {
                 Face::Top => {
-                    let n = texel(u, v, 8.0, 7);
-                    let m = texel(u, v, 2.0, 9) * 0.18;
+                    let n = texel(d, u, v, 8.0, 7);
+                    let m = texel(d, u, v, 2.0, 9) * 0.18;
                     Vec3::new(0.30, 0.56, 0.17) * (0.70 + 0.50 * n + m) * block_edge(u, v)
                 }
-                Face::Bottom => dirt_color(u, v),
+                Face::Bottom => dirt_color(d, u, v),
                 _ => {
                     // Lado del bloque de pasto: franja verde irregular arriba, tierra abajo.
                     let lv = frac(v);
-                    let depth = 0.74 + 0.12 * texel(u, 1.0, 8.0, 13);
+                    let depth = 0.74 + 0.12 * texel(d, u, 1.0, 8.0, 13);
                     let c = if lv > depth {
-                        Vec3::new(0.27, 0.50, 0.15) * (0.75 + 0.4 * texel(u, v, 8.0, 14))
+                        Vec3::new(0.27, 0.50, 0.15) * (0.75 + 0.4 * texel(d, u, v, 8.0, 14))
                     } else {
-                        dirt_color(u, v)
+                        dirt_color(d, u, v)
                     };
                     c * block_edge(u, v)
                 }
             },
-            TextureKind::Dirt => dirt_color(u, v) * block_edge(u, v),
+            TextureKind::Dirt => dirt_color(d, u, v) * block_edge(u, v),
             TextureKind::Sand => {
-                let n = texel(u, v, 8.0, 31);
+                let n = texel(d, u, v, 8.0, 31);
                 Vec3::new(0.86, 0.78, 0.52) * (0.88 + 0.22 * n) * block_edge(u, v)
             }
             TextureKind::Stone => {
                 let (mortar, id, _) = brick_pattern(u, v);
-                if mortar {
-                    Vec3::new(0.30, 0.30, 0.33)
-                } else {
-                    let n = texel(u, v, 8.0, 5);
-                    Vec3::new(0.52, 0.52, 0.55) * (0.78 + 0.28 * id) * (0.9 + 0.2 * n)
-                }
+                let mortar_c = Vec3::new(0.30, 0.30, 0.33);
+                let n = texel(d, u, v, 8.0, 5);
+                let brick_c = Vec3::new(0.52, 0.52, 0.55) * (0.78 + 0.28 * id) * (0.9 + 0.2 * n);
+                let sharp = if mortar { mortar_c } else { brick_c };
+                // LOD: de lejos las juntas finitas se promedian con el ladrillo (evita puntos/moire)
+                let avg = Vec3::lerp(brick_c, mortar_c, 0.15);
+                Vec3::lerp(avg, sharp, d)
             }
             TextureKind::Wood => {
                 let (joint, tone, _) = plank_pattern(u, v);
-                if joint {
-                    Vec3::new(0.25, 0.15, 0.07)
-                } else {
-                    let grain = texel(u * 0.25, v, 16.0, 21);
-                    Vec3::new(0.64, 0.46, 0.26) * (0.80 + 0.28 * tone) * (0.92 + 0.14 * grain)
-                }
+                let joint_c = Vec3::new(0.25, 0.15, 0.07);
+                let grain = texel(d, u * 0.25, v, 16.0, 21);
+                let plank_c = Vec3::new(0.64, 0.46, 0.26) * (0.80 + 0.28 * tone) * (0.92 + 0.14 * grain);
+                let sharp = if joint { joint_c } else { plank_c };
+                let avg = Vec3::lerp(plank_c, joint_c, 0.10);
+                Vec3::lerp(avg, sharp, d)
             }
             TextureKind::Log => match face {
                 Face::Top | Face::Bottom => {
@@ -245,8 +251,8 @@ impl TextureKind {
                     }
                 }
                 _ => {
-                    let stripe = texel(u, 0.5, 6.0, 41);
-                    let fleck = texel(u, v, 8.0, 42);
+                    let stripe = texel(d, u, 0.5, 6.0, 41);
+                    let fleck = texel(d, u, v, 8.0, 42);
                     Vec3::new(0.32, 0.21, 0.11) * (0.65 + 0.55 * stripe) * (0.9 + 0.2 * fleck)
                 }
             },
@@ -255,7 +261,7 @@ impl TextureKind {
                 if e < 0.07 {
                     Vec3::new(0.92, 0.98, 1.0) // marco
                 } else {
-                    Vec3::new(0.72, 0.90, 0.96) * (0.96 + 0.06 * texel(u, v, 4.0, 51))
+                    Vec3::new(0.72, 0.90, 0.96) * (0.96 + 0.06 * texel(d, u, v, 4.0, 51))
                 }
             }
             TextureKind::Water => {
@@ -276,8 +282,8 @@ impl TextureKind {
                 }
             }
             TextureKind::Leaves => {
-                let n = texel(u, v, 8.0, 61);
-                let hole = texel(u, v, 5.0, 62);
+                let n = texel(d, u, v, 8.0, 61);
+                let hole = texel(d, u, v, 5.0, 62);
                 let base = Vec3::new(0.28, 0.52, 0.16);
                 if hole < 0.16 {
                     Vec3::new(0.10, 0.22, 0.07)
@@ -287,13 +293,13 @@ impl TextureKind {
             }
             TextureKind::Gold => {
                 let e = frac(u).min(1.0 - frac(u)).min(frac(v)).min(1.0 - frac(v));
-                let n = texel(u, v, 8.0, 71);
+                let n = texel(d, u, v, 8.0, 71);
                 let c = Vec3::new(1.0, 0.77, 0.26) * (0.82 + 0.28 * n);
                 if e < 0.07 { c * 0.78 } else if e < 0.14 { c * 1.12 } else { c }
             }
             TextureKind::Glowstone => {
-                let n = texel(u, v, 4.0, 81);
-                let cell = texel(u, v, 2.0, 82);
+                let n = texel(d, u, v, 4.0, 81);
+                let cell = texel(d, u, v, 2.0, 82);
                 Vec3::new(1.0, 0.82, 0.45) * (0.65 + 0.45 * n) * (0.85 + 0.2 * cell)
             }
         }
@@ -335,8 +341,9 @@ impl TextureKind {
 
     // Perturbacion de la normal (en el espacio tangente de la cara) -> MAPA DE NORMALES.
     // x = inclinacion a lo largo de u, y = inclinacion a lo largo de v.
-    pub fn normal_perturb(&self, u: f32, v: f32, time: f32) -> Vec3 {
-        let s = self.bump_strength();
+    pub fn normal_perturb(&self, u: f32, v: f32, time: f32, detail: f32) -> Vec3 {
+        // el relieve fino tambien se suaviza con la distancia (menos "moire" y parpadeo)
+        let s = self.bump_strength() * detail.clamp(0.0, 1.0).max(if matches!(self, TextureKind::Water) { 1.0 } else { 0.0 });
         if s == 0.0 {
             return Vec3::zero();
         }
