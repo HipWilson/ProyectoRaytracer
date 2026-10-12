@@ -1,0 +1,10 @@
+^C:\USERS\WILSO\.CARGO\REGISTRY\SRC\INDEX.CRATES.IO-1949CF8C6B5B557F\RAYLIB-SYS-5.5.1\RAYLIB\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib -BC:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build --check-stamp-file C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

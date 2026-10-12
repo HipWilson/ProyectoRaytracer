@@ -1,0 +1,13 @@
+prefix=C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out
+exec_prefix=${prefix}
+includedir=C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/include
+libdir=C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/lib
+
+Name: GLFW
+Description: A multi-platform library for OpenGL, window and input
+Version: 3.4.0
+URL: https://www.glfw.org/
+Requires.private: 
+Libs: -L${libdir} -lglfw3
+Libs.private:  -lgdi32
+Cflags: -I${includedir}

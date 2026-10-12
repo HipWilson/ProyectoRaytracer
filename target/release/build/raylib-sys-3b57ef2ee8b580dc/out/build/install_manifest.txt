@@ -1,0 +1,7 @@
+C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/lib/raylib.lib
+C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/include/raylib.h
+C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/include/rlgl.h
+C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/include/raymath.h
+C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/lib/pkgconfig/raylib.pc
+C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/lib/cmake/raylib/raylib-config-version.cmake
+C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/lib/cmake/raylib/raylib-config.cmake

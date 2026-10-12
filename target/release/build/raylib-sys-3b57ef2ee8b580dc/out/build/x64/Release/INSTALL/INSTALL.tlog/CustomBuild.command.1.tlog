@@ -1,0 +1,10 @@
+^C:\USERS\WILSO\DOCUMENTS\GITHUB\PROYECTORAYTRACER\TARGET\RELEASE\BUILD\RAYLIB-SYS-3B57EF2EE8B580DC\OUT\BUILD\CMAKEFILES\FF9F1DD5CD0A34C1DB6D2B47A2FB8660\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,1813 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\deps"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\wilso\\.cargo\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\wilso\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\\\bin"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.1.3\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\wilso\\go\\bin"
+        - "C:\\Users\\wilso\\AppData\\Roaming\\npm"
+        - "c:\\Users\\wilso\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\bin"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out"
+      ENV{INCLUDE}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\ucrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\cppwinrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\winrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\shared"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: -nologo;-MD;-Brepro;-W0
+      Id flags:  
+      
+      The output was:
+      0
+      Versi├│n de MSBuild 17.14.51+25f168cee para .NET Framework
+      Compilaci├│n iniciada a las 11/10/2026 22:50:26.
+      
+      Proyecto "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\4.4.1\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creando directorio "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Se crear├í "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\4.4.1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminar├í el archivo "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Compilaci├│n del proyecto terminada "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\4.4.1\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
+      
+      Compilaci├│n correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:01.16
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/4.4.1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:102 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files/Java/jdk-22/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/"
+      - "C:/Program Files/Elixir/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Go/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/wilso/.cargo/bin/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/wilso/go/bin/"
+      - "C:/Users/wilso/AppData/Roaming/npm/"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/Graphviz/bin/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\deps"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\wilso\\.cargo\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\wilso\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\\\bin"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.1.3\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\wilso\\go\\bin"
+        - "C:\\Users\\wilso\\AppData\\Roaming\\npm"
+        - "c:\\Users\\wilso\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\bin"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files/Java/jdk-22/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/"
+      - "C:/Program Files/Elixir/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Go/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/wilso/.cargo/bin/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/wilso/go/bin/"
+      - "C:/Users/wilso/AppData/Roaming/npm/"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/Graphviz/bin/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/lld-link"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/lld-link.com"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/lld-link.exe"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/lld-link"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/lld-link.com"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/lld-link.exe"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/lld-link"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/lld-link.com"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/lld-link.exe"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/lld-link"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/lld-link.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/lld-link.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link"
+      - "C:/Program Files/Java/jdk-22/bin/lld-link.com"
+      - "C:/Program Files/Java/jdk-22/bin/lld-link.exe"
+      - "C:/Program Files/Java/jdk-22/bin/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/lld-link.com"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/lld-link.exe"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/lld-link"
+      - "C:/Program Files/Elixir/bin/lld-link.com"
+      - "C:/Program Files/Elixir/bin/lld-link.exe"
+      - "C:/Program Files/Elixir/bin/lld-link"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Program Files/Go/bin/lld-link.com"
+      - "C:/Program Files/Go/bin/lld-link.exe"
+      - "C:/Program Files/Go/bin/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/wilso/.cargo/bin/lld-link.com"
+      - "C:/Users/wilso/.cargo/bin/lld-link.exe"
+      - "C:/Users/wilso/.cargo/bin/lld-link"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/lld-link.com"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/lld-link.exe"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/lld-link"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/lld-link.com"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/lld-link.exe"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/lld-link"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/lld-link.com"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/lld-link.exe"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/lld-link"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/lld-link.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/lld-link.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/lld-link"
+      - "C:/msys64/ucrt64/bin/lld-link.com"
+      - "C:/msys64/ucrt64/bin/lld-link.exe"
+      - "C:/msys64/ucrt64/bin/lld-link"
+      - "C:/Users/wilso/go/bin/lld-link.com"
+      - "C:/Users/wilso/go/bin/lld-link.exe"
+      - "C:/Users/wilso/go/bin/lld-link"
+      - "C:/Users/wilso/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/wilso/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/wilso/AppData/Roaming/npm/lld-link"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+      - "C:/Program Files/Graphviz/bin/lld-link.com"
+      - "C:/Program Files/Graphviz/bin/lld-link.exe"
+      - "C:/Program Files/Graphviz/bin/lld-link"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/lld-link.com"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/lld-link.exe"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\deps"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\wilso\\.cargo\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\wilso\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\\\bin"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.1.3\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\wilso\\go\\bin"
+        - "C:\\Users\\wilso\\AppData\\Roaming\\npm"
+        - "c:\\Users\\wilso\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\bin"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files/Java/jdk-22/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/"
+      - "C:/Program Files/Elixir/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Go/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/wilso/.cargo/bin/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/wilso/go/bin/"
+      - "C:/Users/wilso/AppData/Roaming/npm/"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/Graphviz/bin/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\deps"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\wilso\\.cargo\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\wilso\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\\\bin"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.1.3\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\wilso\\go\\bin"
+        - "C:\\Users\\wilso\\AppData\\Roaming\\npm"
+        - "c:\\Users\\wilso\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\bin"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files/Java/jdk-22/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/"
+      - "C:/Program Files/Elixir/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Go/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/wilso/.cargo/bin/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/wilso/go/bin/"
+      - "C:/Users/wilso/AppData/Roaming/npm/"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/Graphviz/bin/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/mt.com"
+    found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/mt.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\deps"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\wilso\\.cargo\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\wilso\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\\\bin"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.1.3\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\wilso\\go\\bin"
+        - "C:\\Users\\wilso\\AppData\\Roaming\\npm"
+        - "c:\\Users\\wilso\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\bin"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files/Java/jdk-22/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/"
+      - "C:/Program Files/Elixir/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Go/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/wilso/.cargo/bin/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/wilso/go/bin/"
+      - "C:/Users/wilso/AppData/Roaming/npm/"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/Graphviz/bin/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\deps"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\wilso\\.cargo\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\wilso\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\\\bin"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.1.3\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\wilso\\go\\bin"
+        - "C:\\Users\\wilso\\AppData\\Roaming\\npm"
+        - "c:\\Users\\wilso\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\bin"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\deps"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\wilso\\.cargo\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\wilso\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\\\bin"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.1.3\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\wilso\\go\\bin"
+        - "C:\\Users\\wilso\\AppData\\Roaming\\npm"
+        - "c:\\Users\\wilso\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\bin"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out"
+      ENV{INCLUDE}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\ucrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\um"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\cppwinrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\winrt"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.26100.0\\shared"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: -nologo;-MD;-Brepro;-W0
+      Id flags:  
+      
+      The output was:
+      0
+      Versi├│n de MSBuild 17.14.51+25f168cee para .NET Framework
+      Compilaci├│n iniciada a las 11/10/2026 22:50:28.
+      
+      Proyecto "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\4.4.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creando directorio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Se crear├í "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\4.4.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminar├í el archivo "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Compilaci├│n del proyecto terminada "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\4.4.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados).
+      
+      Compilaci├│n correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:01.67
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/4.4.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files/Java/jdk-22/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/"
+      - "C:/Program Files/Elixir/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Go/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/wilso/.cargo/bin/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/wilso/go/bin/"
+      - "C:/Users/wilso/AppData/Roaming/npm/"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/Graphviz/bin/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/lld-link"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/lld-link.com"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/lld-link.exe"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/lld-link"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/lld-link.com"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/lld-link.exe"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/lld-link"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/lld-link.com"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/lld-link.exe"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/lld-link"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.com"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link.exe"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/lld-link"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/lld-link.com"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/lld-link.exe"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/lld-link"
+      - "C:/Program Files/Java/jdk-22/bin/lld-link.com"
+      - "C:/Program Files/Java/jdk-22/bin/lld-link.exe"
+      - "C:/Program Files/Java/jdk-22/bin/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/lld-link.com"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/lld-link.exe"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/lld-link"
+      - "C:/Program Files/Elixir/bin/lld-link.com"
+      - "C:/Program Files/Elixir/bin/lld-link.exe"
+      - "C:/Program Files/Elixir/bin/lld-link"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Program Files/Go/bin/lld-link.com"
+      - "C:/Program Files/Go/bin/lld-link.exe"
+      - "C:/Program Files/Go/bin/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/wilso/.cargo/bin/lld-link.com"
+      - "C:/Users/wilso/.cargo/bin/lld-link.exe"
+      - "C:/Users/wilso/.cargo/bin/lld-link"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/lld-link.com"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/lld-link.exe"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/lld-link"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/lld-link.com"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/lld-link.exe"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/lld-link"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/lld-link.com"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/lld-link.exe"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/lld-link"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/lld-link.com"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/lld-link.exe"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/lld-link"
+      - "C:/msys64/ucrt64/bin/lld-link.com"
+      - "C:/msys64/ucrt64/bin/lld-link.exe"
+      - "C:/msys64/ucrt64/bin/lld-link"
+      - "C:/Users/wilso/go/bin/lld-link.com"
+      - "C:/Users/wilso/go/bin/lld-link.exe"
+      - "C:/Users/wilso/go/bin/lld-link"
+      - "C:/Users/wilso/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/wilso/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/wilso/AppData/Roaming/npm/lld-link"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+      - "C:/Program Files/Graphviz/bin/lld-link.com"
+      - "C:/Program Files/Graphviz/bin/lld-link.exe"
+      - "C:/Program Files/Graphviz/bin/lld-link"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/lld-link.com"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/lld-link.exe"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\deps"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\wilso\\.cargo\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\wilso\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\\\bin"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.1.3\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\wilso\\go\\bin"
+        - "C:\\Users\\wilso\\AppData\\Roaming\\npm"
+        - "c:\\Users\\wilso\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\bin"
+      CMAKE_INSTALL_PREFIX: "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC.cmake:592 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC.cmake:565 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/x64/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/deps/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/x86_64-pc-windows-msvc/lib/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/wilso/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR/"
+      - "C:/Program Files/Java/jdk-22/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Users/wilso/Downloads/sbcl-2.5.1-source/sbcl-2.5.1/"
+      - "C:/Program Files/Elixir/bin/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/Go/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/wilso/.cargo/bin/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Users/wilso/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/wilso/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/wilso/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/wilso/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/wilso/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.1.3/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/wilso/go/bin/"
+      - "C:/Users/wilso/AppData/Roaming/npm/"
+      - "C:/Users/wilso/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Program Files/Graphviz/bin/"
+      - "C:/Users/wilso/.rustup/toolchains/stable-x86_64-pc-windows-msvc/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/bin/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/sbin/"
+      - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/rc.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/rc.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/rc.com"
+    found: "C:/Program Files (x86)/Windows Kits/10/bin/10.0.26100.0/x64/rc.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release"
+        - "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\deps"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\wilso\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\bin"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR"
+        - "C:\\Program Files\\Java\\jdk-22\\bin"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Users\\wilso\\Downloads\\sbcl-2.5.1-source\\sbcl-2.5.1"
+        - "C:\\Program Files\\Elixir\\bin"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\wilso\\.cargo\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\wilso\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\wilso\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\wilso\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\wilso\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\\\bin"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.1.3\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\wilso\\go\\bin"
+        - "C:\\Users\\wilso\\AppData\\Roaming\\npm"
+        - "c:\\Users\\wilso\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Program Files\\Graphviz\\bin"
+        - "C:\\Users\\wilso\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-kvvkvd"
+      binary: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-kvvkvd"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-kvvkvd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3ec1d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.51+25f168cee para .NET Framework
+        Compilaci├│n iniciada a las 11/10/2026 22:50:32.
+        
+        Proyecto "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kvvkvd\\cmTC_3ec1d.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kvvkvd\\Debug\\".
+          Creando directorio "cmTC_3ec1d.dir\\Debug\\cmTC_3ec1d.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_3ec1d.dir\\Debug\\cmTC_3ec1d.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_3ec1d.dir\\Debug\\cmTC_3ec1d.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W0 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_3ec1d.dir\\Debug\\\\" /Fd"cmTC_3ec1d.dir\\Debug\\vc143.pdb" /external:W0 /TC /errorReport:queue  -Brepro "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kvvkvd\\Debug\\cmTC_3ec1d.exe" /INCREMENTAL /ILK:"cmTC_3ec1d.dir\\Debug\\cmTC_3ec1d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-kvvkvd/Debug/cmTC_3ec1d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-kvvkvd/Debug/cmTC_3ec1d.lib" /MACHINE:X64  /machine:x64 cmTC_3ec1d.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_3ec1d.vcxproj -> C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kvvkvd\\Debug\\cmTC_3ec1d.exe
+        FinalizeBuildStatus:
+          Se eliminar├í el archivo "cmTC_3ec1d.dir\\Debug\\cmTC_3ec1d.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_3ec1d.dir\\Debug\\cmTC_3ec1d.tlog\\cmTC_3ec1d.lastbuildstate".
+        Compilaci├│n del proyecto terminada "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kvvkvd\\cmTC_3ec1d.vcxproj" (destinos predeterminados).
+        
+        Compilaci├│n correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:01.59
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        link line: [  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kvvkvd\\Debug\\cmTC_3ec1d.exe" /INCREMENTAL /ILK:"cmTC_3ec1d.dir\\Debug\\cmTC_3ec1d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-kvvkvd/Debug/cmTC_3ec1d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-kvvkvd/Debug/cmTC_3ec1d.lib" /MACHINE:X64  /machine:x64 cmTC_3ec1d.dir\\Debug\\CMakeCCompilerABI.obj] ==> linker [C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe 
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35228.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-x0n0gj"
+      binary: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-x0n0gj"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -nologo -MD -Brepro -W0"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-x0n0gj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a842d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.51+25f168cee para .NET Framework
+        Compilaci├│n iniciada a las 11/10/2026 22:50:35.
+        
+        Proyecto "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x0n0gj\\cmTC_a842d.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x0n0gj\\Debug\\".
+          Creando directorio "cmTC_a842d.dir\\Debug\\cmTC_a842d.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_a842d.dir\\Debug\\cmTC_a842d.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_a842d.dir\\Debug\\cmTC_a842d.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W0 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_a842d.dir\\Debug\\\\" /Fd"cmTC_a842d.dir\\Debug\\vc143.pdb" /external:W0 /TP /errorReport:queue  -Brepro "C:\\Program Files\\CMake\\share\\cmake-4.4\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x0n0gj\\Debug\\cmTC_a842d.exe" /INCREMENTAL /ILK:"cmTC_a842d.dir\\Debug\\cmTC_a842d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-x0n0gj/Debug/cmTC_a842d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-x0n0gj/Debug/cmTC_a842d.lib" /MACHINE:X64  /machine:x64 cmTC_a842d.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_a842d.vcxproj -> C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x0n0gj\\Debug\\cmTC_a842d.exe
+        FinalizeBuildStatus:
+          Se eliminar├í el archivo "cmTC_a842d.dir\\Debug\\cmTC_a842d.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_a842d.dir\\Debug\\cmTC_a842d.tlog\\cmTC_a842d.lastbuildstate".
+        Compilaci├│n del proyecto terminada "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x0n0gj\\cmTC_a842d.vcxproj" (destinos predeterminados).
+        
+        Compilaci├│n correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:01.31
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        link line: [  C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-x0n0gj\\Debug\\cmTC_a842d.exe" /INCREMENTAL /ILK:"cmTC_a842d.dir\\Debug\\cmTC_a842d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-x0n0gj/Debug/cmTC_a842d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-x0n0gj/Debug/cmTC_a842d.lib" /MACHINE:X64  /machine:x64 cmTC_a842d.dir\\Debug\\CMakeCXXCompilerABI.obj] ==> linker [C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe 
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.44.35228.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)"
+      - "cmake/AddIfFlagCompiles.cmake:3 (CHECK_C_COMPILER_FLAG)"
+      - "cmake/CompilerFlags.cmake:5 (add_if_flag_compiles)"
+      - "CMakeLists.txt:34 (include)"
+    checks:
+      - "Performing Test COMPILER_HAS_THOSE_TOGGLES"
+    directories:
+      source: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-hg0qzd"
+      binary: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-hg0qzd"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_THOSE_TOGGLES"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-hg0qzd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9b4d9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.51+25f168cee para .NET Framework
+        Compilaci├│n iniciada a las 11/10/2026 22:50:38.
+        
+        Proyecto "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hg0qzd\\cmTC_9b4d9.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hg0qzd\\Debug\\".
+          Creando directorio "cmTC_9b4d9.dir\\Debug\\cmTC_9b4d9.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_9b4d9.dir\\Debug\\cmTC_9b4d9.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_9b4d9.dir\\Debug\\cmTC_9b4d9.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W0 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D COMPILER_HAS_THOSE_TOGGLES /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_9b4d9.dir\\Debug\\\\" /Fd"cmTC_9b4d9.dir\\Debug\\vc143.pdb" /external:W0 /TC /errorReport:queue  -Brepro -Werror=pointer-arith "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hg0qzd\\src.c"
+        cl : command line  error D8021: invalid numeric argument '/Werror=pointer-arith' [C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hg0qzd\\cmTC_9b4d9.vcxproj]
+        Compilaci├│n del proyecto terminada "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hg0qzd\\cmTC_9b4d9.vcxproj" (destinos predeterminados) -- ERROR.
+        
+        ERROR al compilar.
+        
+        "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hg0qzd\\cmTC_9b4d9.vcxproj" (destino predeterminado) (1) ->
+        (ClCompile destino) -> 
+          cl : command line  error D8021: invalid numeric argument '/Werror=pointer-arith' [C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-hg0qzd\\cmTC_9b4d9.vcxproj]
+        
+            0 Advertencia(s)
+            1 Errores
+        
+        Tiempo transcurrido 00:00:00.72
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "src/external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-4kqj79"
+      binary: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-4kqj79"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/cmake;C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-4kqj79'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9e7e3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.51+25f168cee para .NET Framework
+        Compilaci├│n iniciada a las 11/10/2026 22:50:40.
+        
+        Proyecto "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4kqj79\\cmTC_9e7e3.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4kqj79\\Debug\\".
+          Creando directorio "cmTC_9e7e3.dir\\Debug\\cmTC_9e7e3.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_9e7e3.dir\\Debug\\cmTC_9e7e3.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_9e7e3.dir\\Debug\\cmTC_9e7e3.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W0 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_9e7e3.dir\\Debug\\\\" /Fd"cmTC_9e7e3.dir\\Debug\\vc143.pdb" /external:W0 /TC /errorReport:queue  -Brepro "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4kqj79\\src.c"
+          src.c
+        C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4kqj79\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4kqj79\\cmTC_9e7e3.vcxproj]
+        Compilaci├│n del proyecto terminada "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4kqj79\\cmTC_9e7e3.vcxproj" (destinos predeterminados) -- ERROR.
+        
+        ERROR al compilar.
+        
+        "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4kqj79\\cmTC_9e7e3.vcxproj" (destino predeterminado) (1) ->
+        (ClCompile destino) -> 
+          C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4kqj79\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4kqj79\\cmTC_9e7e3.vcxproj]
+        
+            0 Advertencia(s)
+            1 Errores
+        
+        Tiempo transcurrido 00:00:00.96
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckLibraryExists.cmake:142 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:238 (_threads_check_lib)"
+      - "src/external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-7j4mo2"
+      binary: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-7j4mo2"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/cmake;C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-7j4mo2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f9f30.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.51+25f168cee para .NET Framework
+        Compilaci├│n iniciada a las 11/10/2026 22:50:42.
+        
+        Proyecto "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7j4mo2\\cmTC_f9f30.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7j4mo2\\Debug\\".
+          Creando directorio "cmTC_f9f30.dir\\Debug\\cmTC_f9f30.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_f9f30.dir\\Debug\\cmTC_f9f30.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_f9f30.dir\\Debug\\cmTC_f9f30.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W0 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_f9f30.dir\\Debug\\\\" /Fd"cmTC_f9f30.dir\\Debug\\vc143.pdb" /external:W0 /TC /errorReport:queue  -Brepro "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7j4mo2\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7j4mo2\\Debug\\cmTC_f9f30.exe" /INCREMENTAL /ILK:"cmTC_f9f30.dir\\Debug\\cmTC_f9f30.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-7j4mo2/Debug/cmTC_f9f30.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-7j4mo2/Debug/cmTC_f9f30.lib" /MACHINE:X64  /machine:x64 cmTC_f9f30.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7j4mo2\\cmTC_f9f30.vcxproj]
+        Compilaci├│n del proyecto terminada "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7j4mo2\\cmTC_f9f30.vcxproj" (destinos predeterminados) -- ERROR.
+        
+        ERROR al compilar.
+        
+        "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7j4mo2\\cmTC_f9f30.vcxproj" (destino predeterminado) (1) ->
+        (Link destino) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7j4mo2\\cmTC_f9f30.vcxproj]
+        
+            0 Advertencia(s)
+            1 Errores
+        
+        Tiempo transcurrido 00:00:01.19
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/CheckLibraryExists.cmake:142 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.4/Modules/FindThreads.cmake:239 (_threads_check_lib)"
+      - "src/external/glfw/CMakeLists.txt:60 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-5vcq7o"
+      binary: "C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-5vcq7o"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: " -nologo -MD -Brepro -W0"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/cmake;C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/src/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-5vcq7o'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2bdde.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Versi├│n de MSBuild 17.14.51+25f168cee para .NET Framework
+        Compilaci├│n iniciada a las 11/10/2026 22:50:43.
+        
+        Proyecto "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vcq7o\\cmTC_2bdde.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creando directorio "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vcq7o\\Debug\\".
+          Creando directorio "cmTC_2bdde.dir\\Debug\\cmTC_2bdde.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_2bdde.dir\\Debug\\cmTC_2bdde.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_2bdde.dir\\Debug\\cmTC_2bdde.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /nologo /W0 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_2bdde.dir\\Debug\\\\" /Fd"cmTC_2bdde.dir\\Debug\\vc143.pdb" /external:W0 /TC /errorReport:queue  -Brepro "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vcq7o\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vcq7o\\Debug\\cmTC_2bdde.exe" /INCREMENTAL /ILK:"cmTC_2bdde.dir\\Debug\\cmTC_2bdde.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-5vcq7o/Debug/cmTC_2bdde.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/CMakeScratch/TryCompile-5vcq7o/Debug/cmTC_2bdde.lib" /MACHINE:X64  /machine:x64 cmTC_2bdde.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vcq7o\\cmTC_2bdde.vcxproj]
+        Compilaci├│n del proyecto terminada "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vcq7o\\cmTC_2bdde.vcxproj" (destinos predeterminados) -- ERROR.
+        
+        ERROR al compilar.
+        
+        "C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vcq7o\\cmTC_2bdde.vcxproj" (destino predeterminado) (1) ->
+        (Link destino) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\wilso\\Documents\\GitHub\\ProyectoRaytracer\\target\\release\\build\\raylib-sys-3b57ef2ee8b580dc\\out\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5vcq7o\\cmTC_2bdde.vcxproj]
+        
+            0 Advertencia(s)
+            1 Errores
+        
+        Tiempo transcurrido 00:00:00.58
+        
+      exitCode: 1
+...

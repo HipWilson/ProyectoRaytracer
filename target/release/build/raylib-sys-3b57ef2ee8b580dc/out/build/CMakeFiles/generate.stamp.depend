@@ -1,0 +1,48 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCXXLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCommon.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckFlagCommonConfig.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Linker/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Linker/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Linker/MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake
+C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/CMakeLists.txt
+C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/CMakeOptions.txt
+C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/cmake/AddIfFlagCompiles.cmake
+C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/cmake/CompilerFlags.cmake
+C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/cmake/EnumOption.cmake
+C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/cmake/ParseConfigHeader.cmake
+C:/Users/wilso/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/raylib-sys-5.5.1/raylib/cmake/Uninstall.cmake
+C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/4.4.1/CMakeCCompiler.cmake
+C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/4.4.1/CMakeCXXCompiler.cmake
+C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/4.4.1/CMakeRCCompiler.cmake
+C:/Users/wilso/Documents/GitHub/ProyectoRaytracer/target/release/build/raylib-sys-3b57ef2ee8b580dc/out/build/CMakeFiles/4.4.1/CMakeSystem.cmake
