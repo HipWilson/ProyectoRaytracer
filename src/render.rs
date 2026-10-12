@@ -10,6 +10,27 @@ use crate::vec3::{Color, Vec3};
 
 const MAX_DEPTH: u32 = 5;
 
+// Calidad del trazado. El PREVIEW (mientras se mueve la camara) usa menos rebotes y sombras de
+// luces puntuales simplificadas para ir mas rapido y poder usar mas resolucion; el render final usa todo.
+#[derive(Clone, Copy)]
+pub struct Quality {
+    pub max_depth: u32,
+    pub point_light_shadows: bool,
+}
+impl Quality {
+    pub const FULL: Quality = Quality { max_depth: MAX_DEPTH, point_light_shadows: true };
+    pub const PREVIEW: Quality = Quality { max_depth: 3, point_light_shadows: false };
+}
+
+// Nivel de detalle de textura segun el tamano de un pixel de pantalla a esa distancia.
+// Un texel mide 1/8 de bloque; si el pixel cubre mas que eso, se suaviza el ruido fino.
+#[inline]
+fn texture_detail(distance: f32, px_angle: f32) -> f32 {
+    let footprint = distance * px_angle; // tamano de un pixel en el mundo
+    let t = ((footprint - 0.02) / 0.06).clamp(0.0, 1.0);
+    1.0 - t * t * (3.0 - 2.0 * t)
+}
+
 // xorshift32, para no depender de ninguna libreria externa de numeros aleatorios
 struct Rng(u32);
 impl Rng {
@@ -34,8 +55,8 @@ fn schlick(cosine: f32, ref_idx: f32) -> f32 {
 
 // Devuelve (color, distancia recorrida hasta el primer golpe). La distancia sirve para la
 // absorcion del agua (mientras mas profundo, mas azul oscuro).
-fn trace(scene: &Scene, env: &Environment, ray: &Ray, depth: u32) -> (Color, f32) {
-    if depth >= MAX_DEPTH {
+fn trace(scene: &Scene, env: &Environment, q: &Quality, px_angle: f32, ray: &Ray, depth: u32) -> (Color, f32) {
+    if depth >= q.max_depth {
         return (scene.sky_color(ray.dir, env), f32::INFINITY);
     }
 
@@ -46,7 +67,8 @@ fn trace(scene: &Scene, env: &Environment, ray: &Ray, depth: u32) -> (Color, f32
 
     let mat = hit.material;
     let params = mat.params;
-    let base = mat.texture.color_at(hit.u, hit.v, hit.face, env.anim_time).mul_v(mat.tint);
+    let detail = texture_detail(hit.t, px_angle);
+    let base = mat.texture.color_at(hit.u, hit.v, hit.face, env.anim_time, detail).mul_v(mat.tint);
 
     // Material EMISIVO (lava, glowstone): brilla con luz propia, no depende de la iluminacion.
     if let Some(emissive) = params.emissive {
@@ -57,7 +79,7 @@ fn trace(scene: &Scene, env: &Environment, ray: &Ray, depth: u32) -> (Color, f32
     // MAPA DE NORMALES: inclinamos la normal segun la textura
     let n = if params.has_normal_map {
         let (tu, tv) = face_tangents(hit.face);
-        let pert = mat.texture.normal_perturb(hit.u, hit.v, env.anim_time);
+        let pert = mat.texture.normal_perturb(hit.u, hit.v, env.anim_time, detail);
         (hit.normal + tu * pert.x + tv * pert.y).normalize()
     } else {
         hit.normal
@@ -94,7 +116,7 @@ fn trace(scene: &Scene, env: &Environment, ray: &Ray, depth: u32) -> (Color, f32
             continue;
         }
         let atten = (1.0 - dist / light.radius).powi(2);
-        if scene.occluded(&Ray::new(shadow_origin, ld), dist - 0.05) {
+        if q.point_light_shadows && scene.occluded(&Ray::new(shadow_origin, ld), dist - 0.05) {
             continue;
         }
         diffuse = diffuse + base.mul_v(light.color) * (nl * atten * 0.9);
@@ -123,7 +145,7 @@ fn trace(scene: &Scene, env: &Environment, ray: &Ray, depth: u32) -> (Color, f32
             match ray.dir.refract(outward_n, eta_ratio) {
                 Some(refr_dir) => {
                     let refr_ray = Ray::new(hit.point - outward_n * 0.002, refr_dir);
-                    let (c, d) = trace(scene, env, &refr_ray, depth + 1);
+                    let (c, d) = trace(scene, env, q, px_angle, &refr_ray, depth + 1);
                     transmitted = c;
                     // Absorcion en el agua: lo que esta mas profundo se ve mas oscuro y azul.
                     if params.absorption > 0.0 && front_face {
@@ -142,7 +164,7 @@ fn trace(scene: &Scene, env: &Environment, ray: &Ray, depth: u32) -> (Color, f32
         let reflect_dir = ray.dir.reflect(outward_n);
         let refl_ray = Ray::new(hit.point + outward_n * 0.002, reflect_dir);
         let (reflected, _) = if tir || reflect_prob > 0.015 {
-            trace(scene, env, &refl_ray, depth + 1)
+            trace(scene, env, q, px_angle, &refl_ray, depth + 1)
         } else {
             (Vec3::zero(), 0.0)
         };
@@ -157,7 +179,7 @@ fn trace(scene: &Scene, env: &Environment, ray: &Ray, depth: u32) -> (Color, f32
         // ---- Reflexion tipo espejo (oro) ----
         let reflect_dir = ray.dir.reflect(n);
         let refl_ray = Ray::new(hit.point + hit.normal * 0.002, reflect_dir);
-        let (mut rc, _) = trace(scene, env, &refl_ray, depth + 1);
+        let (mut rc, _) = trace(scene, env, q, px_angle, &refl_ray, depth + 1);
         if params.metallic {
             rc = rc.mul_v(Vec3::lerp(Vec3::splat(1.0), base, 0.8));
         }
@@ -188,6 +210,12 @@ fn to_u8(c: f32) -> u8 {
 // Asi ningun hilo queda ocioso aunque unas filas (con vidrio/agua/reflejos) cuesten mas que otras.
 // `samples` = rayos por pixel (anti-aliasing con muestreo estratificado). Devuelve RGBA8.
 pub fn render(scene: &Scene, camera: &Camera, env: &Environment, width: usize, height: usize, samples: u32) -> Vec<u8> {
+    render_q(scene, camera, env, width, height, samples, &Quality::FULL)
+}
+
+// Igual que `render` pero eligiendo la calidad (Quality::PREVIEW para el movimiento, Quality::FULL para el final).
+pub fn render_q(scene: &Scene, camera: &Camera, env: &Environment, width: usize, height: usize, samples: u32, quality: &Quality) -> Vec<u8> {
+    let px_angle = camera.fov / height as f32; // angulo (rad) que cubre un pixel
     let n_threads = thread::available_parallelism().map(|n| n.get()).unwrap_or(4).max(1);
     let aspect = width as f32 / height as f32;
     let samples = samples.max(1);
@@ -225,7 +253,7 @@ pub fn render(scene: &Scene, camera: &Camera, env: &Environment, width: usize, h
                                 let sx = 2.0 * ((i as f32 + 0.5 + jx) / width as f32) - 1.0;
                                 let sy = 1.0 - 2.0 * ((j as f32 + 0.5 + jy) / height as f32);
                                 let ray = camera.get_ray(sx, sy, aspect);
-                                acc = acc + trace(scene, env, &ray, 0).0;
+                                acc = acc + trace(scene, env, quality, px_angle, &ray, 0).0;
                             }
                             let c = (acc / samples as f32).clamp01();
                             let g = 1.0 / 2.2; // gamma
